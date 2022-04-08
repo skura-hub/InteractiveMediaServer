@@ -3,15 +3,15 @@
 - Visual Studio
 - .Net Core 5
 
-## Database Settings Path:
+## Database Settings:
 Backend.Api/appsettings.json
 
 ## Migration
 Project: Backend.Infrastructure
   1. Set Backend.Api as starting project
   2. Tools -> NuGetPackageManager->Package Manager Console
-  3. Change 'DefaultProject': Backend.Infrastructure
-  4. [Write in console]
+  3. Change DefaultProject: Backend.Infrastructure
+  4. Write in console:
 ```sh
 Add-Migration InitalContext -context ApplicationDbContext 
 Update-Database -context ApplicationDbContext
