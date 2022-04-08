@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Backend.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Backend.Api.Controllers.IdentityController.GetTokenAsync(Backend.Application.DTOs.Identity.TokenRequest)">
+            <summary>
+            Generates a JSON Web Token for a valid combination of emailId and password.
+            </summary>
+            <param name="tokenRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Api.Controllers.v1.ApplicationUserController.GetById(System.String)">
+            <summary>
+            Get public information about user
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Backend.Api.Controllers.v1.ApplicationUserController.GetByParametrs(System.String)">
+            <summary>
+            Find all users
+            ?username -> first characters of username
+            </summary>
+            <param name="username"></param>
+        </member>
+        <member name="M:Backend.Api.Controllers.v1.PlaygroundController.GetPlayground(System.Int32)">
+            <summary>
+            Zwraca tablicę w json gotową do przekazania jako initialElements 
+            do biblioteki React Flow
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Backend.Api.Controllers.v1.PlaygroundController.PublishArtwork(Backend.Application.DTOs.ArtworkResponse.ArtworkPostRequest)">
+            <summary>
+            Nie działa
+            Publikuje tworzone dzieło
+            W przyszłości doda się dodatkowe parametry
+            Zwraca id opublikowanego dzieła
+            </summary>
+            <param name="artworkRequest"></param>
+        </member>
+        <member name="M:Backend.Api.Controllers.v1.PlaygroundController.GenerateJson(System.Int32)">
+            <summary>
+            Generuje schemat json do odtwarzania dla tworzonego dzieła
+            Zwraca json
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>
